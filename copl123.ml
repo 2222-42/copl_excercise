@@ -6,7 +6,7 @@
          x : 'a |- fun y -> y x :: [] : ('a -> 'b) -> 'b list by T-Abs{
            x : 'a, y : ('a -> 'b) |- y x :: [] : 'b list by T-Cons{
              x : 'a, y : ('a -> 'b) |- y x : 'b by T-App{
-               x : 'a, y : ('a -> 'b) |- y : 'a -> 'b by T-Var{};
+               x : 'a, y : ('a -> 'b) |- y : 'a -> int by T-Var{};
                x : 'a, y : ('a -> 'b) |- x : 'a by T-Var{}
              };
              x : 'a, y : ('a -> int) |- [] : int list by T-Nil{}
